@@ -1,0 +1,31 @@
+# Table of Contents
+# Learn more: https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+
+parts:
+  - caption: Getting Started
+    chapters:
+      - file: getting-started/overview
+      - file: getting-started/setup
+
+  - caption: Data Pipelines
+    chapters:
+      - file: pipelines/etl-pipeline
+      - file: pipelines/data-ingestion
+
+  - caption: SQL Reference
+    chapters:
+      - file: sql/common-queries
+      - file: sql/optimization-tips
+
+  - caption: Python Reference
+    chapters:
+      - file: python/data-processing
+      - file: python/api-reference
+
+  - caption: Guidelines
+    chapters:
+      - file: guidelines/coding-standards
+      - file: guidelines/deployment

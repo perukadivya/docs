@@ -1,0 +1,66 @@
+# Jupyter Book Configuration
+# Learn more: https://jupyterbook.org/customize/config.html
+
+title: "Data Engineering Docs"
+author: "Your Team"
+logo: ""
+
+# Build settings
+execute:
+  execute_notebooks: "off"  # Don't execute notebooks on build
+
+# HTML appearance
+html:
+  favicon: ""
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+  baseurl: ""
+  
+# Repository settings (update with your repo)
+repository:
+  url: https://github.com/your-org/data-engineering-docs
+  path_to_book: ""
+  branch: main
+
+# Launch buttons (optional - for Binder/Colab)
+launch_buttons:
+  notebook_interface: "classic"
+  binderhub_url: ""
+  colab_url: "https://colab.research.google.com"
+
+# Sphinx extensions
+sphinx:
+  extra_extensions:
+    - sphinx_copybutton          # Copy button for code blocks
+    - sphinxcontrib.mermaid      # Mermaid diagrams
+  config:
+    html_theme_options:
+      use_download_button: true
+      use_fullscreen_button: true
+      use_repository_button: true
+    # Copy button settings
+    copybutton_prompt_text: ">>> |\\$ |In \\[\\d*\\]: |\\.\\.\\.: "
+    copybutton_prompt_is_regexp: true
+    copybutton_only_copy_prompt_lines: false
+    copybutton_remove_prompts: true
+
+# Enable comments with Hypothesis
+html:
+  comments:
+    hypothesis: true
+
+# Parse settings for MyST markdown
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
