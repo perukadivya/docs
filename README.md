@@ -4,6 +4,18 @@ Jupyter Book	docs-jupyterbook/
 Sphinx + Furo	docs-sphinx-furo/
 Both include:
 
+
+# Jupyter Book
+cd docs-jupyterbook
+pip install -r requirements.txt
+jupyter-book build .
+# Open _build/html/index.html
+
+# Sphinx + Furo
+cd docs-sphinx-furo
+pip install -r requirements.txt
+sphinx-build -b html . _build/html
+# Open _build/html/index.html
 ✅ Copy button for code blocks (one-click)
 ✅ Sample pipeline documentation with Mermaid diagrams
 ✅ SQL & Python code examples
